@@ -14,34 +14,28 @@ print(names[0].title())
 print("Olá caro amigo " + names[1])
 
 # Modificando elementos da lista [ ]
-
 motorcycles = ['honda', 'yamaha', 'suzuki']
 motorcycles[0] = 'ducati'
 print(motorcycles)
 
 # Adicionando elementos em lista .append() "sempre no final da lista"
-
 motorcycles.append('triumph')
 print(motorcycles)
 
 # Adicionando elementos em posições especifícas .insert(posição, 'nome do elementos')
-
 motorcycles.insert(0, 'ktm')
 print(motorcycles)
 
 # Removendo elementos da lista '.del lista [posição]'
-
 del motorcycles[0]
 print(motorcycles)
 
 # Removendo com .pop()
-
 popped_motorcycle = motorcycles.pop()
 print(motorcycles)
 print(popped_motorcycle)
 
 # Removendo com .pop(posição)
-
 motorcycles = ['honda', 'yamaha', 'suzuki']
 first_owned = motorcycles.pop(1)
 print('The first motorcycle I owned was a ' + first_owned.title() + '.')
@@ -89,3 +83,46 @@ print('Dear ' + invited[1].title() + '\nWe waiting you for dinner.')
 del invited[0]
 del invited[0]
 print(invited)
+
+# Ordenando listas .sort() (alfabética) permanente
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort()
+print(cars)
+
+# Inverte permanente na ordem que estiver a lista
+cars.sort(reverse=True) 
+print(cars)
+
+# Ordenando listas .sorted() temporariamente
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print("\nOriginal list: ")
+print(cars)
+print("\nSorted list: ")
+print(sorted(cars))
+
+# Inverte permanente .reserve() na ordem que estiver
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.reverse()
+print(cars)
+
+# Tamanho de uma lista
+print(len(cars))
+
+### Exercícios
+
+# 3.8 - Conhecendo o mundo
+iwish = ['edinburgh', 'paris', 'tokyo', 'new york', 'amsterdam']
+print(iwish)
+print(sorted(iwish))
+print(iwish)
+iwish.reverse()
+print(iwish)
+iwish.reverse()
+print(iwish)
+iwish.sort()
+print(iwish)
+iwish.sort(reverse=True)
+print(iwish)
+
+# 3.9 - Convidados para o jantar
+print(len(invited))
