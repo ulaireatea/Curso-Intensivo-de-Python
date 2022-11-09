@@ -72,3 +72,27 @@ elif alien_color == 'red':
 else:
     pts = 15
 print("You received " + str(pts) + " pts.")
+
+# 5.6 - Estágios da vida
+age = 1
+if age >=2 and age < 4:
+    print("You is a child.")
+elif age >=4 and age < 13:
+    print("You is a young.")
+elif age >= 13 and age < 20:
+    print("You is a tennager.")
+elif age >= 20 and age < 65:
+    print("You is a adult.")
+elif age >= 65:
+    print("You is a older.")
+else:
+    print("You is a infant.")
+
+# 5.7 - Fruta favorita
+favorite_fruits = ['manga', 'morango', 'abacaxi']
+if 'manga' in favorite_fruits:
+    print("You really like Manga.")
+if 'morango' in favorite_fruits:
+    print("You really like Morango.")
+if 'abacaxi' in favorite_fruits:
+    print("You really like Abacaxi.")
