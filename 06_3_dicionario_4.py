@@ -76,8 +76,4 @@ person2 = {
     'city': 'Hell'}
 people = [person, person1, person2]
 for id in people:
-    print(person['first_name'] + " " + person['last_name'], person['age'], person['city'])
-    print(person1['first_name'] + " " + person1['last_name'], person1['age'], person1['city'])
-    print(person2['first_name'] + " " + person2['last_name'], person2['age'], person2['city'])
-
-
+    print(id['first_name'] + " " + id['last_name'] + " " + str(id['age']) + " " + id['city'])
