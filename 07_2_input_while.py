@@ -45,3 +45,41 @@ while polling_active:
         for name, response in responses.items():
             print(name + " would like to climb " + response + ".")
 
+## Exercícios
+
+# 7.8 - Lanchonete
+sandwich_orders = ['bauru', 'xis', 'beirute', 'chivito']
+finished_sandwiches = []
+for sandwich in sandwich_orders:
+    print("Preparei seu prato: " + sandwich.title())
+    finished_sandwiches.append(sandwich)
+print("Os seguintes pratos foram preparados: ")
+print(finished_sandwiches)
+
+# 7.9 - Sem pastrami
+sandwich_orders = ['pastrami', 'atum', 'pastrami', 'pastrami', 'mortadela', 'presunto']
+message = print("A Lanchonete esta sem pastrami\n")
+finished_sandwiches = []
+for sandwich in sandwich_orders:
+    print("Preparei seu sanduíche: " + sandwich.title())
+    finished_sandwiches.append(sandwich)
+print("Os seguintes pratos foram preparados: ")
+print(finished_sandwiches)
+while 'pastrami' in finished_sandwiches:
+    finished_sandwiches.remove('pastrami')
+    print(finished_sandwiches)
+
+# 7.10 - Férias dos sonhos
+responses = {}
+active = True
+
+while active:
+    name = input("\nQual seu nome? ")
+    response = input("Se pudesse visitar um lugar do mundo, para onde você iria? ")
+    responses[name] = response
+    repeat = input("Outra pessoa vai responder? (yes/no) ")
+    if repeat == 'no':
+        active = False
+        print("\n--- Resultados da pesquisa ---")
+        for name, response in responses.items():
+            print(name.title() + " gostaria de ir para " + response.title() + ".")
