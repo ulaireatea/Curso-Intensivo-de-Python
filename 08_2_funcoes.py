@@ -70,3 +70,21 @@ def make_album(artist, disco, songs=''):
 discografia = make_album('deep purple', 'shades of deep purple', 9)
 print(discografia)
 
+def make_album(artist, disco, songs=''):
+    album = {'name': artist, 'disc': disco }
+    if songs:
+        album['songs'] = songs
+        return album
+
+while True:
+    print("\nPlease type an artist and  your respective album: ")
+    print("(enter 'q' at any time for quit)")
+    band_name = input("Band: ")
+    if band_name == 'q':
+        break
+    album_name = input("Album: ")
+    if album_name == 'q':
+        break
+    
+formatted_name = make_album(band_name, album_name)
+print(formatted_name)
